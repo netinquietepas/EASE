@@ -1,0 +1,63 @@
+body {margin:0px;}
+/*    #active {color:red;} , id="active" 있었는데 삭제*/
+/*  .saw {color:gray;} , 속성에 class="saw"넣어서 맵핑했었음. 필요 없어서 삭제*/
+a {text-decoration:none;}
+h1 {font-size:45px; text-align: center; color:tomato;
+   border-bottom:1px solid gray;
+   margin:0;
+   padding:20px;}
+/*p {color:black;}*/
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ul{
+  border-right:1px solid gray;
+  width:185px;
+  margin:0px;
+  padding:30px;
+  padding-left:38px;
+  padding-right:20px;
+}
+
+#grid #article{
+  padding:30px;
+  padding-left:125px;
+  padding-right:70px;
+}
+
+#grid #image{
+  padding-bottom:20px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  #grid ul{
+    border-right:none;
+  }
+  #grid #article{
+    padding:20px;
+  }
+
+}
+
+#night_day{
+  background-color: #008CBA; /*blue*/
+    border: none;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+#night_day:hover {
+    background-color: #e7e7e7; /* Grey */
+    color: black;
+}

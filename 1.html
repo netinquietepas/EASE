@@ -2,35 +2,48 @@
 <html>
 <!--이 문서는 html로 만들어졌다.-->
 <head>
-<title>Flutter Studio<3</title>
+<title>E.A.S.E</title>
 <meta charset="utf-8">
 <!-- 한글이 깨질 때 넣어주면 됨. 브라우저에서 이용하는 것과 다를 때 깨지는것-->
+<meta name="description" content="Personal Blog about satisfactory eating">
+<meta name="keywords" content="Eating, Food, Restaurants, Seoul, 맛집, 맛집리스트, 집밥">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="colors.js"> </script>
 </head>
+<!--두개 다 해당할 경우, 마지막꺼. 선택자<<class선택자<<ID선택자-->
 
 <body>
-
-<h1><a href="index.html"> Flutter Studio</a> </h1>
+<h1><a href="index.html">Everything About Satisfactory Eating</a> </h1>
 <!-- <ul></ul>  unordered list -->
 <!-- <ol></ol>  ordered list -->
+<div id = "grid">
+    <ul>
+      <input id="night_day" type="button" value="night" onclick="
+      nightDayhandler(this);
+      "><br><br>
+      <li><a href="1.html">집에서 먹기</a> </li>
+        <!-- <a href="1-1.html">♡매운 돼지갈비찜</a><br>
+        <a href="1-2.html">♡된장 차돌박이 파스타</a> -->
 
-<ol>
-  <li><a href="1.html">Concept</a> </li>
-  <li><a href="2.html">Yeoyu  </a></li>
-  <li><a href="3.html">Coming soon </a></li>
-</ol>
+      <li><a href="2.html">밖에서 먹기</a></li> <!--class여러개 넣을수있음-->
+      <li><a href="3.html">커피와 간식</a></li>
+    </ul>
 
-<ul>
-  <li><a href="4.html">Notice</a></li>
-</ul>
-<img src="Flutter_mainimage.png"  width="100%">
+    <div id = "article">
+      <div id = "image"><center><img src="cookingathome.jpg"  width="50%"></center>
+      </div>
+      <p> 어렸을 때는 집밥을 안 좋아했는데, 나이가 들수록 집밥만한 요리가 없습니다.
+        일단 출처를 확실하게 알 수 있는 좋은 재료를 이용하고, 무엇보다 정성이 들어간 밥을 먹기 때문인 것 같습니다.
+        직접 요리한 음식을 올릴 수 있으면 좋겠지만은 요리를 1도 할줄 몰라서
+        우리집 쉐프인 어무니의 작품들을 올려볼까 합니다 ㅎㅎ
+      </p>
 
-<h2> Concept </h2>
-<p>안녕하세요! Flutter Studio(플러터 스튜디오)입니다. 저희는 가슴을 두근두근,
-<strong>flutter</strong>하게 하는 모든 것들을 직접 ‘손’으로 제작하고,
-flutter의 가치에 공감해주시고 좋아해주시는 여러분과 함께 나누고자 하는 일념을
-가진 스튜디오입니다. </p>
-<p style = "margin-top:40px;"> 그 첫번째 프로젝트로, ‘4계절 내내 일상에 여유를 가져다 줄,
-YeoYu(여유) 슈즈’를 선보이게 되었습니다.
-<br> <a href="https://tumblbug.com/yeoyushoes" target="_blank"> ♥ 구경 가기 ♥ </a>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>

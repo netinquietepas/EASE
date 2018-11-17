@@ -2,27 +2,113 @@
 <html>
 <!--이 문서는 html로 만들어졌다.-->
 <head>
-<title>Flutter Studio<3</title>
+<title>E.A.S.E</title>
 <meta charset="utf-8">
 <!-- 한글이 깨질 때 넣어주면 됨. 브라우저에서 이용하는 것과 다를 때 깨지는것-->
+<meta name="description" content="Personal Blog about satisfactory eating">
+<meta name="keywords" content="Eating, Food, Restaurants, Seoul, 맛집, 맛집리스트, 집밥">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<!--<style>
+  body {margin:0px;}
+/*    #active {color:red;} , id="active" 있었는데 삭제*/
+/*  .saw {color:gray;} , 속성에 class="saw"넣어서 맵핑했었음. 필요 없어서 삭제*/
+  a {color:black; text-decoration:none;}
+  h1 {font-size:45px; text-align: center; color:tomato;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px;}
+  p {color:black;}
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ul{
+    border-right:1px solid gray;
+    width:185px;
+    margin:0px;
+    padding:30px;
+    padding-left:38px;
+    padding-right:20px;
+  }
+
+  #grid #article{
+    padding:30px;
+    padding-left:125px;
+    padding-right:70px;
+  }
+
+  #grid #image{
+    padding-bottom:20px;
+
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    #grid ul{
+      border-right:none;
+    }
+    #grid #article{
+      padding:20px;
+    }
+
+}
+</style>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="colors.js"> </script>
+
 </head>
+<!--두개 다 해당할 경우, 마지막꺼. 선택자<<class선택자<<ID선택자-->
+
 
 <body>
+  <h1><a href="index.html">Everything About Satisfactory Eating</a> </h1>
+  <!-- <ul></ul>  unordered list -->
+  <!-- <ol></ol>  ordered list -->
+<!--  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+  ">
+-->
 
-<h1><a href="index.html"> Flutter Studio</a> </h1>
-<!-- <ul></ul>  unordered list -->
-<!-- <ol></ol>  ordered list -->
+<!--  <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+      document.querySelector('body').style.backgroudColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroudColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('#night_day').value = 'night';
+    }
+  "> -->
 
-<ol>
-  <li><a href="1.html">Concept</a> </li>
-  <li><a href="2.html">Yeoyu  </a></li>
-  <li><a href="3.html">Coming soon </a></li>
-</ol>
 
-<ul>
-  <li><a href="4.html">Notice</a></li>
-</ul>
-<img src="Flutter_mainimage.png"  width="100%">
-
+<div id = "grid">
+    <ul>
+      <input id="night_day" type="button" value="night" onclick="
+      nightDayhandler(this);
+      "><br><br>
+      <li><a href="1.html">집에서 먹기</a> </li>
+      <li><a href="2.html">밖에서 먹기</a></li> <!--class여러개 넣을수있음-->
+      <li><a href="3.html">커피와 간식</a></li>
+    </ul>
+  <div id = "article">
+    <div id = "image"><center><img src="EAT.jpg"  width="50%"></center>
+    </div>
+    <p>회사에서 제공하는 어느 교수의 강의에서, ‘행복’이라는 것은 원래 요행을 의미하는 것으로, ‘우연히 얻게 되는 복’의 의미라고 합니다. 때문에 요즘 ‘소확행’이라고 사람들이 얘기하는 것은 ‘행복’보다는 ‘만족감’에 가깝다고 하네요.
+    </p>
+    <p>‘만족감’의 척도는 크게 ‘쾌락’과 ‘의미’가 있다고 합니다. 좋은 사람들과 의 식사 시간을 우리가 ‘행복하다(=만족스럽다)’고 느끼는 이유도 여기 있다고 생각해요. 혼밥은 쾌락을 극대화시킨 것이라면, 함께하는 식사는 쾌락과 의미가 밸런싱된 행위가 아닐까요? 좋아하는 사람들을 위해 요리해주는 행위도 비슷한 맥락에 해당이 될 것 같아요.
+    </p>
+    <p>그래서 저는 집에서, 밖에서, 맛있는 것을 먹었던 경험을 이곳에 공유하려고 합니다. 다른 분들에게도 참고가 되었으면 좋겠네요 :)
+    </p>
+  </div>
+</div>
 </body>
 </html>
