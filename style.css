@@ -10,12 +10,13 @@ h1 {font-size:45px; text-align: center; color:tomato;
 #grid{
   display:grid;
   grid-template-columns: 150px 1fr;
+  margin:0px;
 }
 #grid ul{
   border-right:1px solid gray;
   width:185px;
   margin:0px;
-  padding:30px;
+  padding:20px;
   padding-left:38px;
   padding-right:20px;
 }

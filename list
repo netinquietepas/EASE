@@ -1,0 +1,10 @@
+
+<input id="night_day" type="button" value="night" onclick="
+nightDayhandler(this);
+">
+<br>
+<br>
+
+<li><a href="#!zib" onclick = "fetchPage('zib')">집에서 먹기</a> </li>
+<li><a href="#!bakk" onclick = "fetchPage('bakk')">밖에서 먹기</a> </li>
+<li><a href="#!cafe" onclick = "fetchPage('cafe')">커피와 간식</a></li>
